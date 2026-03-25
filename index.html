@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnterateYa.cr - Comodoro Rivadavia</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Roboto',sans-serif;background:#f5f5f5}
+        .header{background:linear-gradient(135deg,#1e3c72,#2a5298);color:white;padding:1rem;position:fixed;width:100%;top:0;z-index:100}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .logo{display:flex;align-items:center;gap:15px}
+        .logo h1{font-size:1.8rem}
+        .hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%231e3c72" width="1200" height="400"/><text x="50%" y="50%" font-size="30" fill="white" text-anchor="middle" dy=".3em">ENTERATEYA.CR</text></svg>');background-size:cover;height:400px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;margin-top:70px}
+        .hero h2{font-size:2.5rem;margin-bottom:1rem}
+        .noticias{padding:4rem 0;background:#fff}
+        h2{text-align:center;margin-bottom:2rem;color:#1e3c72;font-size:2rem}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;padding:0 20px;max-width:1200px;margin:0 auto}
+        .card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:all 0.3s}
+        .card:hover{transform:translateY(-5px)}
+        .card-img{height:200px;background:linear-gradient(45deg,#1e3c72,#2a5298);display:flex;align-items:center;justify-content:center;color:white;font-size:3rem}
+        .card-content{padding:1.5rem}
+        .card h3{font-size:1.3rem;color:#1e3c72;margin-bottom:0.5rem}
+        .card p{color:#666;margin-bottom:1rem}
+        .fecha{font-size:0.9rem;color:#999}
+        .redes{background:linear-gradient(135deg,#667eea,#764ba2);color:white;padding:3rem 0;text-align:center}
+        .redes h3{margin-bottom:2rem}
+        .redes a{display:inline-block;margin:0 1rem;padding:1rem 2rem;background:rgba(255,255,255,0.2);color:white;text-decoration:none;border-radius:30px;transition:all 0.3s}
+        .redes a:hover{background:white;color:#667eea;transform:translateY(-3px)}
+        .footer{background:#1a1a1a;color:#ccc;padding:2rem;text-align:center}
+        @media(max-width:768px){.grid{grid-template-columns:1fr;padding:0 10px}}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div style="width:50px;height:50px;background:#ffd700;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold">E</div>
+                <h1>EnterateYa.cr</h1>
+            </div>
+        </div>
+    </header>
 
+    <section class="hero">
+        <div>
+            <h2>📰 Noticias de Comodoro Rivadavia</h2>
+            <p>Locales • Provinciales • Nacionales</p>
+        </div>
+    </section>
+
+    <section class="noticias">
+        <h2>Últimas Noticias</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img">🚨</div>
+                <div class="card-content">
+                    <h3>Corte de luz en Km 3 y Km 5</h3>
+                    <p>SECHEEP anuncia interrupción programada por 6 horas este jueves.</p>
+                    <div class="fecha">14 Oct • Locales</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">🌡️</div>
+                <div class="card-content">
+                    <h3>Récord de temperatura 32°C</h3>
+                    <p>Comodoro supera todos los registros históricos de octubre.</p>
+                    <div class="fecha">14 Oct • Locales</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">⛽</div>
+                <div class="card-content">
+                    <h3>Chubut lidera exportaciones</h3>
+                    <p>La provincia genera $2.500 millones en petróleo trimestral.</p>
+                    <div class="fecha">14 Oct • Provinciales</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">💰</div>
+                <div class="card-content">
+                    <h3>Nuevo bono $70.000</h3>
+                    <p>Anunciado para jubilados y AUH la próxima semana.</p>
+                    <div class="fecha">14 Oct • Nacionales</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="redes">
+        <div class="container">
+            <h3>📱 Síguenos en:</h3>
+            <a href="https://instagram.com/enterateya.cr" target="_blank"><i class="fab fa-instagram"></i> @enterateya.cr</a>
+            <a href="https://whatsapp.com/channel/0029VbBAPxF1XquVBbCAhy04" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.facebook.com/share/1FU2ZUQNKk/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 EnterateYa.cr - Comodoro Rivadavia, Chubut</p>
+            <p>contacto@enterateya.cr</p>
+        </div>
+    </footer>
+</body>
+</html>
